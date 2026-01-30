@@ -74,7 +74,6 @@ export const registerPatient = async ({
   try {
     let uploadedFileId: string | null = null;
 
-    // ✅ NODE-SAFE FILE UPLOAD
     if (identificationDocument) {
       const filePath = identificationDocument.get("filePath") as string;
 
